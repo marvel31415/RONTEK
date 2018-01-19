@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Site Title-->
-    <title>Контакты</title>
+    <title>Search results</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -188,107 +188,31 @@
           </div>
       </header>
       <!-- Breadcrumbs-->
-      <section class="breadcrumbs-custom bg-image" style="background-image: url(images/bg-image-6.jpg);">
+      <section class="breadcrumbs-custom bg-image" style="background-image: url(images/bg-image-5.jpg);">
         <div class="shell">
-          <h2 class="breadcrumbs-custom__title">Контакты</h2>
+          <h2 class="breadcrumbs-custom__title">Результаты поиска</h2>
           <ul class="breadcrumbs-custom__path">
             <li><a href="index.html">Главная</a></li>
-            <li class="active">Контакты</li>
+            <li class="active">Результаты поиска</li>
           </ul>
         </div>
       </section>
 
-      <!-- Get in Touch-->
-      <section class="section section-lg bg-white">
+      <!-- Search results -->
+      <section class="section section-md bg-white"> 
         <div class="shell">
-          <div class="layout-bordered">
-            <div class="layout-bordered__main text-center">
-              <div class="layout-bordered__main-inner">
-                <h3>Свяжитесь с нами!</h3>
-                <p>Вы можете связаться с нами в любое удобное для Вас время с помощью факса, e-mail или по телефону. Так же вы можете заполнить нашу контактную форму чтобы получить информацию об интересующей Вас услуге или товару. </p>
-                <!-- RD Mailform-->
-                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                  <div class="range range-sm-bottom range-20">
-                    <div class="cell-sm-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="contact-first-name" type="text" name="first-name" data-constraints="@Required">
-                        <label class="form-label" for="contact-first-name">Имя</label>
-                      </div>
-                    </div>
-                    <div class="cell-sm-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
-                        <label class="form-label" for="contact-phone">Телефон</label>
-                      </div>
-                    </div>
-                    <div class="cell-xs-12">
-                      <div class="form-wrap">
-                        <label class="form-label" for="contact-message">Ваше сообщение</label>
-                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                      </div>
-                    </div>
-                    <div class="cell-sm-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                        <label class="form-label" for="contact-email">E-mail</label>
-                      </div>
-                    </div>
-                    <div class="cell-sm-6">
-                      <button class="button button-block button-primary" type="submit">Отправить сообщение</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+          <!-- RD Search-->
+          <form class="rd-search rd-search_md rd-search_classic" action="search-results.html" method="GET">
+            <div class="form-wrap">
+              <input class="form-input" id="search-results-search" type="text" name="s" autocomplete="off">
+              <label class="form-label" for="search-results-search">Поиск...</label>
             </div>
-            <div class="layout-bordered__aside">
-              <div class="layout-bordered__aside-item">
-                <p class="heading-8">Социальные сети </p>
-                <ul class="list-inline-xs">
-                  <li><a class="icon icon-sm icon-default fa fa-facebook" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-default fa fa-twitter" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-default fa fa-google" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-default fa fa-youtube" href="#"></a></li>
-                </ul>
-              </div>
-              <div class="layout-bordered__aside-item">
-                <p class="heading-8">Телефон</p>
-                <div class="unit unit-horizontal unit-spacing-xxs">
-                  <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
-                  <div class="unit__body"><a href="callto:#">1-800-1234-567</a></div>
-                </div>
-              </div>
-              <div class="layout-bordered__aside-item">
-                <p class="heading-8">E-mail</p>
-                <div class="unit unit-horizontal unit-spacing-xxs">
-                  <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
-                  <div class="unit__body"><a href="mailto:sales@rontektools.com">sales@rontektools.com</a></div>
-                </div>
-              </div>
-              <div class="layout-bordered__aside-item">
-                <p class="heading-8">Адрес</p>
-                <div class="unit unit-horizontal unit-spacing-xxs">
-                  <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-location_on"></span></div>
-                  <div class="unit__body"><a href="#">Индустриальный парк "Великий камень", <br> 222224 Минская обл.</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <button class="rd-search-submit" type="submit"></button>
+          </form>
+          <div class="rd-search-results"></div>
         </div>
       </section>
 
-      <!-- RD Google Map-->
-      <section class="section">
-          <div class="rd-google-map rd-google-map__model" data-zoom="6" data-x="55.873486" data-y="26.516271">
-              <ul class="map_locations">
-                  <li data-y="53.836993" data-x=" 28.012637">
-                      <p>Индустриальный парк "Великий камень".</p>
-                  </li>
-                  <li data-y="58.375351" data-x="24.553329">
-                      <p>Papiniidu 5, 80010 Pärnu, Estonia.</p>
-                  </li>
-              </ul>
-          </div>
-      </section>
       <!-- Page Footer-->
       <footer class="section footer-modern parallax-container bg-gray-3">
           <div class="material-parallax"><img src="images/bg-image-3.jpg" alt=""></div>
