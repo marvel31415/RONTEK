@@ -1675,22 +1675,22 @@ $document.ready(function () {
       var dateCountdownItem = $(plugins.dateCountdown[i]),
         time = {
           "Days": {
-            "text": "Days",
+            "text": "Дней",
             "show": true,
             color: dateCountdownItem.attr("data-color") ? dateCountdownItem.attr("data-color") : "#f9f9f9"
           },
           "Hours": {
-            "text": "Hours",
+            "text": "Часов",
             "show": true,
             color: dateCountdownItem.attr("data-color") ? dateCountdownItem.attr("data-color") : "#f9f9f9"
           },
           "Minutes": {
-            "text": "Minutes",
+            "text": "Минут",
             "show": true,
             color: dateCountdownItem.attr("data-color") ? dateCountdownItem.attr("data-color") : "#f9f9f9"
           },
           "Seconds": {
-            "text": "Seconds",
+            "text": "Секунд",
             "show": true,
             color: dateCountdownItem.attr("data-color") ? dateCountdownItem.attr("data-color") : "#f9f9f9"
           }
