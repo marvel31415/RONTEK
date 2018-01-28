@@ -17785,7 +17785,7 @@ html.boxed .rd-navbar--is-clone {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 100;
     left: 0;
     z-index: 0;
     background: linear-gradient(to top, rgba(179, 182, 200, 0.3) 20%, rgba(255, 255, 255, 0));
