@@ -17966,6 +17966,7 @@ html.boxed .rd-navbar--is-clone {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: inherit;
+  background-position: center;
 }
 
 .swiper-slide .swiper-slide-caption {
